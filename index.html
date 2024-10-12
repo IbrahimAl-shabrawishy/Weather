@@ -1,0 +1,337 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel='stylesheet' href="./css/style.css">
+</head>
+
+<body>
+
+    
+
+<nav>
+    <div class="nav d-flex flex-column justify-content-center align-items-center p-5">
+        <div class="container w-75 d-flex justify-content-between">
+            <div class="logo d-flex flex-wrap gap-1 ">
+                <img  src="./Images/logo@2x.png" alt="logo"/>
+                <div>
+                    <h1 class="h6 m-0 fw-bold text-white">Weather</h1>
+                <p class=" fs-10 m-0 fw-light text-white">tagline goes here</p>
+                </div>
+        </div>
+        
+        <ul class="list-unstyled  d-flex w-50 justify-content-between m-0 align-items-center">
+            <li>
+                <a class="active">Home</a>
+            </li>
+        
+        
+            <li>
+                <a>News</a>
+            </li>
+        
+        
+        
+        
+            <li>
+                <a>Live Cameras</a>
+            </li>
+        
+            <li>
+                <a>Photos</a>
+            </li>
+        
+        
+            <li>
+                <a>Contact</a>
+            </li>
+        
+        </ul>
+    
+        </div>
+        
+        </div>
+
+</nav>
+
+
+<section class="app-container">
+
+
+<div class="container w-75 px-3 ">
+
+
+<!-- Input search -->
+
+<div class="input pt-3">
+    <input id="search-input-find" type="text" class="form-control rounded-5 px-4 py-3 bg-input w-100 mx-auto" placeholder="Find Your Location...."/>
+<button id="btn-find" class="btn btn-info">Find</button>
+</div>
+
+<div class="row">
+    <!-- Today Data Section -->
+
+<div class="item col-md-4 bg-card-today p-0 mt-4 rounded-4 ">
+   <div class="inner">
+    <div class="d-flex justify-content-between py-2 px-3 text-light bg-date-today" id="todayDate">
+        <p id="today-date-day-name" class="my_auto m-0"> Sunday</p>
+<span>
+    <span id="today_date_day_number" class="my_auto">30</span>
+    <span id="today_date_month" class="my_auto">Aug</span>
+</span>
+    </div>
+
+
+
+    <div class="item-content text-light" id="today">
+        <p id="location-today" class="fs-4 px-3 py-5" >Cairo</p>
+    </div> 
+    <div class="degreeToday text-light d-flex">
+        <p id="degreeToday" class=" fw-bolder px-4">  </p>
+        <span><sup class="fs-1 fw-bold">O</sup>C</span>
+     
+    </div>
+
+
+<div class="status-weather">
+    <img width="90" src="" alt="113" id="todayConditionImage"/>
+</div>
+<div class="sunny px-3 text-info" id="statusWeather">
+    <p>Sunny</p>
+</div>
+
+<div class="three-status-weather py-3 d-flex flex-wrap justify-content-evenly text-light px-2">
+   
+    <span >
+        <img width="30" src="./Images/icon-umberella@2x.png" alt="113"/>
+    <span id="humidity"></span>
+    </span>
+
+
+    <span>
+        <img width="30" src="./Images/icon-compass@2x.png" alt="113"/>
+      <span id="wind_kph">  18km/h</span>
+    </span>
+
+    <span>
+        <img width="30" src="./Images/icon-wind@2x.png" alt="113"/>
+       <span id="wind_dir"> East</span>
+    </span>
+
+</div>
+
+
+
+<div 
+
+
+</div>
+
+
+</div>
+
+
+   </div>
+
+
+</div>
+
+
+<!-- Tomorrow Date Section -->
+
+<div class="item col-md-4 bg-card-tomorrow p-0 mt-4 rounded-4 ">
+   <div class="inner">
+    <div class="d-flex justify-content-center py-2 px-3 text-light bg-date-tomorrow" id="todayDate">
+        <p  class="my_auto m-0 next_day_name"> Sunday</p>
+
+    </div>
+
+
+<div class="status-weather d-flex justify-content-center flex-column align-items-center pt-5 ">
+    <img class="next_condition_img" width="90" src="" alt="112"/>
+</div>
+
+<div class="degree-tomorrow  text-center text-white">
+    <p class="fs-2 fw-bloder next_max_temp"><span><sup>o</sup>C</span></p>
+    <p class="text-light next_min_temp">55<sup> o</sup></p>
+</div>
+<div class="sunny text-info next_condition_text text-center py-3">
+    <p>Sunny</p>
+</div>
+<div 
+</div>
+
+</div>
+   </div>
+
+</div>
+
+
+
+
+<!-- after Tomorrow Date Section -->
+
+<div class="item col-md-4 bg-card-today mt-4 rounded-4  p-0  ">
+    <div class="inner ">
+        <div class="d-flex justify-content-center py-2 px-3 text-light bg-date-today" id="todayDate">
+            <p  class="my_auto m-0 next_day_name"> Sunday</p>
+    
+        </div>
+    
+    <div class="status-weather d-flex justify-content-center flex-column align-items-center pt-5 ">
+        <img class="next_condition_img" width="90" src="./Images/112.png" alt="112"/>
+    </div>
+    
+    <div class="degree-tomorrow  text-center text-white">
+        <p class="fs-2 fw-bloder next_max_temp">2 <span><sup>o</sup>C</span></p>
+
+        <span class="text-light next_min_temp">21.8 <sup>o</sup> </span>
+    </div>
+    
+    
+    <div class="sunny next_condition_text text-center text-info py-3">
+        <p>Sunny</p>
+    </div>
+    
+    </div>
+
+
+
+<div 
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+<!-- footer section -->
+<footer class="footer d-flex flex-column justify-content-center bg-footer py-5 mt-5 ">
+    <div class="row w-75 mx-auto ">
+      
+        <div class="col-md-8 ">
+            <div class="input pt-3">
+                <input type="text" class="form-control rounded-5 px-4 py-3 bg-input w-100 mx-auto" placeholder="Enter your Email To Subscribe"/>
+            <button class="btn btn-info">Subscribe</button>
+            </div>
+        </div>
+  
+        <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+            <div class="icons-footer  d-flex justify-content-evenly gap-3 px-5 flex-wrap py-3">
+                <i class="fa-brands fa-facebook fs-5"></i>
+                <i class="fa-brands fa-twitch fs-5"></i>
+                <i class="fa-brands fa-google fs-5"></i>
+                <i class="fa-brands fa-youtube fs-5"></i>
+            </div>
+     
+      </div>
+      <p class="px-5 footer-P text-light">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+
+    </div>
+</footer>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
